@@ -1,0 +1,18 @@
+[
+  {
+    "icon": "fa-twitter",
+    "link": "https://twitter.com/TomaszGelo"
+  },
+	 {
+    "icon": "fa-github",
+    "link": "https://github.com/tgelo"
+  },
+  {
+    "icon": "fa-linkedin",
+    "link": "https://pl.linkedin.com/in/tomasz-gelo-95a137b5"
+  },
+  {
+    "icon": "fa-envelope",
+    "link": "mailto:tomekgelo.contact@gmail.com"
+  }
+]
