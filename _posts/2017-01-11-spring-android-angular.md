@@ -1,29 +1,52 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2016-06-04 13:50:39
+title:  "Token-Based authentication: Spring server [PART1]"
+date:   2017-01-15 13:50:39
 categories: jekyll
 ---
 
-This post will be the first part of the Token Based Authentication cycle Spring Server + Android Client + JS client cycle.
+This post will be the first part of the Token Based Authentication cycle.
 
-The goal of this post is to explain token based authentication using spring.
+The whole project consists of three parts:
+  * Spring server 
+  * Android client
+  * JS client
 
-Technologies used:
+The goal of this post is to describe Spring server. 
 
-Spring boot with security and jpa
-Hibernate
-Ehcache as memory cache for tokens
-Gradle
-`H2 database`
-`liquibase`
+Technologies which are used:
+
+* Spring boot with security and jpa
+* Hibernate
+* Ehcache as memory cache for tokens
+* Gradle
+* H2 database
+* Liquibase
 
 
 Dependency
 
+
+
 Security
 
+
+
 Database
+
+    @Configuration
+    @EnableJpaRepositories("com.tgelo.domain")
+    @EnableTransactionManagement
+    public class DatabaseConfiguration {
+    
+        @Bean
+        ServletRegistrationBean h2servletRegistration() {
+            ServletRegistrationBean registrationBean = new ServletRegistrationBean(new WebServlet());
+            registrationBean.addUrlMappings("/console/*");
+            return registrationBean;
+        }
+    }
+
 
 Controller
 
