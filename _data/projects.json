@@ -1,0 +1,9 @@
+[
+	{
+		"name": "Token-Based Authentication - server",
+		"image": "spring-boot-project-logo.jpg",
+		"url": "https://github.com/tgelo/spring-android-token",
+		"date": "Jan 2017",
+		"tags": ["Spring Boot","Spring Security", "Spring JPA", "Gradle", "Hibernate", "Ehcache", "Liquibase", "Spock"]
+	}
+]
